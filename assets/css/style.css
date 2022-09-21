@@ -1,0 +1,741 @@
+* {
+    background-color:#0A192F ;
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap');
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size:16px;
+    display: block;
+    
+}
+
+
+/*=============================================================
+                HEADER
+=============================================================*/
+
+
+header {
+    height:100px;
+    color:#48b9a6;
+    font-family:  'Roboto Mono', monospace;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    left: 0;
+
+    
+    
+}
+
+
+.header {
+    height:100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    font-family:  'Roboto Mono', monospace;
+    
+    
+}
+
+
+.logoimg img{
+    width: 50px;
+    height: 50px;
+    padding-left: 80px;
+}
+
+
+.menu {
+    flex:1;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    
+}
+
+
+.menu ul,
+.menu li {
+    list-style:none;
+    display:flex;
+}
+
+
+.menu li a {
+    color:#48b9a6;
+    text-decoration: none;
+    padding-left:20px;
+    padding-right:20px;
+    display:flex;
+    align-items:center;
+}
+
+
+.menu li a:hover,
+.menu .active a {
+    border:#48b9a6 2px solid;
+    border-radius: 4px;
+    background-color: #133040;
+}
+
+
+/*=============================================================
+                INTRODUÇÃO
+=============================================================*/
+main{
+    color: white;
+    margin: 0px auto;
+    width: 100%;
+    
+    
+}
+
+
+.section--1{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-left: 100px;
+    margin-top: 100px;
+    
+    
+}
+
+
+.myname{
+    color: #48b9a6;
+    font-size: 20px; 
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 30px;
+}
+
+
+.name{
+    color: #CCD6F6;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.build{
+    color: #8892B0;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.introduction{
+    color: #8892B0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding-top: 30px;
+    width: 400px;
+}
+
+
+.link{
+    padding-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+.linkearea ,
+.gitarea{
+    display:flex;
+    align-items:center;
+    border: #48b9a6 2px solid;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 7px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+
+.linkearea a,
+.gitarea a{
+    text-decoration: none;
+    color:#48b9a6;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 30px 20px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.linkearea img,
+.gitarea img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding-top: 2px;
+}
+
+
+.gitarea:hover ,
+.linkearea:hover{
+    background-color: #133040; 
+}
+
+
+.space{
+    padding-left: 30px;
+}
+/*=============================================================
+                SOBRE
+=============================================================*/
+.bar{
+    display: block;
+    top:-10px;
+    width: 300px;
+    height: 2px;
+    margin-left: 600px;
+    background-color:#CCD6F6;
+}
+
+
+.about{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+
+
+.about h2{
+    color: #48b9a6;
+    font-family:  'Roboto Mono', monospace; 
+}
+
+
+.about--style{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.about--text{
+    width: 400px;
+    padding-right: 300px;
+    padding-top: 150px;
+    color: #8892B0;
+}
+
+
+.about--image img{
+    width: 300px;
+    border: #48b9a6 4px solid;
+    margin-top: 50px;
+    border-radius: 10px; 
+}
+
+
+.about{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding: 0px;
+    padding-bottom: 300px;
+}
+
+
+.about h2{
+    color: #48b9a6;
+    font-family:  'Roboto Mono', monospace;
+}
+
+
+
+/*=============================================================
+               SKILLS
+=============================================================*/
+
+
+
+.skills ,
+.projetos ,
+.contato h2{
+    color: #48b9a6;
+    font-family:  'Roboto Mono', monospace;
+   
+}
+
+.skills,
+.projetos,
+.contato{
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding: 0px;
+    padding-bottom: 300px;
+    
+    
+
+}
+.skills--text{
+    width: 500px;
+    padding-right: 300px;
+    padding-top: 50px;
+}
+
+.skills--text ul{
+    list-style: none;
+    color: #8892B0;
+    padding-top: 20px;
+    font-family:  'Roboto Mono', monospace;
+}
+
+.skills--text span{
+    color: #48b9a6;
+}
+/*=============================================================
+                PROJETOS
+=============================================================*/
+
+.projetos--area{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+   
+    
+    
+}
+.projetos--img1 img ,
+.projetos--img2 img{
+    height: 200px;
+    margin: 20px;
+    border: #48b9a6 3px solid;
+    border-radius: 20px;   
+    
+}
+.projetos--img1 img:hover,
+.projetos--img2 img:hover{
+    filter: contrast(1) brightness(0.5) saturate(1);
+}
+
+
+/*=============================================================
+               CONTATO
+=============================================================*/
+
+.contato{
+    
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.contato--area{
+    display: flex;
+    margin: 10px;
+    padding-top: 30px;
+    
+}
+
+.email--area{
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+    
+}
+
+.tel--area{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+}
+
+.tel--area a ,
+.email--area a{
+    text-decoration: none;
+    color:#48b9a6;
+    border: #48b9a6 2px solid;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 20px;
+    padding: 20px;
+}
+
+.tel--area img ,
+.email--area img{
+    width: 20px;
+    height: 20px;
+}
+
+/*=============================================================
+              FOOTER
+=============================================================*/
+
+footer{
+    height:100px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+
+footer div{
+    font-family:  'Roboto Mono', monospace;
+    color:#48b9a6;
+}
+
+footer img{
+    width: 20px;
+}
+
+
+/*=============================================================
+              RESPONSIVIADE
+=============================================================*/
+
+@media  (max-width: 425px) {
+   
+    header{
+        margin: 20px;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .section--1{
+        padding-left: 30px;
+    }
+    .menu {
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin: 0;
+        padding-right: 0;
+        
+    }
+    .menu li{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+    .logoimg img{
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+    }
+    .tel--area a,
+    .email--area a {
+     
+        font-size: 10px;
+    }
+    
+    .name h1{
+        font-size: 30px;
+    }
+    .introduction{
+        width: 300px;
+    }
+    .about--text h4{
+        font-size: 12px;
+    }
+    .build h1{
+        font-size: 30px;
+        
+    }
+    .about--text{
+        width: 300px;
+        padding-top: 150px;
+        color: #8892B0;
+    }
+    .link{
+        flex-direction: column;
+        padding: 10px;
+        align-items:flex-end;
+        
+        margin: 10px;
+    }
+    .space{
+        padding-top: 30px;
+    }
+
+    .about--style{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bar{
+        display: block;
+        top:0;
+        width: 0;
+        height: 2px;
+        margin-left: 0;
+        background-color:#CCD6F6;
+    }
+    .about--text{
+    width: 300px;
+    padding-right: 0px;
+    padding-top: 150px;
+    color: #8892B0;
+}
+    .skills--text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+        padding-right: 0;
+        padding-top: 50px;
+    }
+
+    .skills--text ul {
+        font-size: 10px;
+    }
+    
+    
+    .projetos--area{
+        flex-direction: column;
+
+    }
+
+    .contato{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        
+    }
+    
+    .contato--area{
+        display: flex;
+        margin: 10px;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .email--area{
+        padding-bottom: 30px;
+    }
+    .menu li a {
+        padding-left:20px;
+        padding-right:20px;
+        
+    }
+
+
+    .projetos--img1 img ,
+    .projetos--img2 img{
+    height: 130px;
+    
+    
+}
+    .menu li a {
+        color:#48b9a6;
+        text-decoration: none;
+        padding-left:5px;
+        padding-right:5px;
+        display:flex;
+        align-items:center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 768px) and (min-width: 426px) {
+
+    
+    header{
+        margin: 20px;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    .section--1{
+        padding-left: 50px;
+    }
+    .menu {
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: -10px;
+        margin: 10px;
+        
+    }
+    .menu li{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    
+    .name h1{
+        font-size: 40px;
+    }
+    .introduction{
+        width: 300px;
+    }
+    .about--text h4{
+        font-size: 12px;
+    }
+    .build h1{
+        font-size: 40px;
+        
+    }
+    .about--text{
+        width: 300px;
+        padding-top: 150px;
+        color: #8892B0;
+    }
+    .link{
+        
+        padding: 10px;
+        align-items:flex-end;
+        margin: 10px;
+    }
+    .space{
+        padding-top: 30px;
+    }
+
+    .about--style{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bar{
+        display: block;
+        top:0;
+        width: 0;
+        height: 2px;
+        margin-left: 0;
+        background-color:#CCD6F6;
+    }
+    .about--text{
+    width: 300px;
+    padding-right: 0px;
+    padding-top: 150px;
+    color: #8892B0;
+}
+    .skills--text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+        padding-right: 0;
+        padding-top: 50px;
+    
+    }
+   
+    .projetos--area{
+        flex-direction: column;
+
+    }
+
+    .contato{
+    
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        align-items: center;
+        
+    }
+    
+    .contato--area{
+        display: flex;
+        margin: 30px;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .email--area{
+        padding-bottom: 30px;
+    }
+    .menu li a {
+        padding-left:20px;
+        padding-right:20px;
+        
+    }
+
+   
+    .projetos--img1 img ,
+    .projetos--img2 img{
+    height: 200px;
+    
+    
+}
+    .menu li a {
+        padding-left:5px;
+        padding-right:5px;
+        display:flex;
+        align-items:center;
+    }
+    
+}
