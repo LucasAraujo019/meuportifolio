@@ -33,13 +33,14 @@ header {
     position: fixed;
     top:0;
     left: 0;
+    z-index: 999px;
 
     
     
 }
 
 
-.header {
+.nav {
     height:100px;
     margin:auto;
     display:flex;
@@ -97,9 +98,7 @@ header {
 main{
     color: white;
     margin: 0px auto;
-    width: 100%;
-    
-    
+    width: 100%; 
 }
 
 
@@ -112,9 +111,7 @@ main{
     align-items: flex-start;
     min-height: 100vh;
     padding-left: 100px;
-    margin-top: 100px;
-    
-    
+    margin-top: 100px;   
 }
 
 
@@ -155,11 +152,12 @@ main{
 
 
 .link{
-    padding-top:30px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 30px;
+
 }
 
 
@@ -168,11 +166,12 @@ main{
     display:flex;
     align-items:center;
     border: #48b9a6 2px solid;
-    display: inline-block;
+    display: inline;
     border-radius: 4px;
     padding: 7px;
     text-align: center;
     padding-left: 10px;
+    margin: 20px;
 }
 
 
@@ -197,7 +196,6 @@ main{
     padding-top: 2px;
 }
 
-
 .gitarea:hover ,
 .linkearea:hover{
     background-color: #133040; 
@@ -207,9 +205,21 @@ main{
 .space{
     padding-left: 30px;
 }
+
+
+
+
 /*=============================================================
                 SOBRE
 =============================================================*/
+
+
+
+.row{
+    padding-bottom: 110px;
+}
+
+
 .bar{
     display: block;
     top:-10px;
@@ -220,13 +230,14 @@ main{
 }
 
 
+
 .about{
     display: flex;
     margin-top: 100px;
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    width: 100%;
+    height: 100vh;
 }
 
 
@@ -239,22 +250,25 @@ main{
 .about--style{
     display: flex;
     flex-direction: row;
+    
 }
-
 
 .about--text{
-    width: 400px;
-    padding-right: 300px;
+    width: 300px;
+    padding-right: 200px;
     padding-top: 150px;
     color: #8892B0;
+    
 }
-
-
+.about--image{
+    padding-top: 100px;
+}
 .about--image img{
-    width: 300px;
+    width: 250px;
+    margin: 20px;
     border: #48b9a6 4px solid;
-    margin-top: 50px;
-    border-radius: 10px; 
+    padding: 10px;
+    background-image: linear-gradient(to right,  rgb(1, 253, 253) , rgb(253, 1, 253));
 }
 
 
@@ -280,8 +294,32 @@ main{
                SKILLS
 =============================================================*/
 
+.cards{
+   display: flex;
+   
 
-
+}
+.box{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border:2px solid #48b9a6;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+    
+    
+}
+.box img {
+    width: 50px;
+    height: auto;
+    padding-top: 10px;
+    
+}
 .skills ,
 .projetos ,
 .contato h2{
@@ -294,7 +332,6 @@ main{
 .projetos,
 .contato{
     display: flex;
-    
     justify-content: center;
     flex-direction: column;
     align-items:center;
@@ -303,11 +340,6 @@ main{
     
     
 
-}
-.skills--text{
-    width: 500px;
-    padding-right: 300px;
-    padding-top: 50px;
 }
 
 .skills--text ul{
@@ -320,32 +352,43 @@ main{
 .skills--text span{
     color: #48b9a6;
 }
+
+.skills--text h4{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+
+
 /*=============================================================
                 PROJETOS
 =============================================================*/
 
 .projetos--area{
     display: flex;
-    padding-top: 30px;
+    padding-top: 100px;
     align-items: center;
     text-align: center;
    
-    
-    
 }
+
 .projetos--img1 img ,
 .projetos--img2 img{
     height: 200px;
     margin: 20px;
     border: #48b9a6 3px solid;
-    border-radius: 20px;   
-    
+    padding: 10px;
+    background-image: linear-gradient(to right,  rgb(1, 253, 253) , rgb(253, 1, 253));
 }
 .projetos--img1 img:hover,
 .projetos--img2 img:hover{
     filter: contrast(1) brightness(0.5) saturate(1);
 }
 
+.projetos--area h2 {
+    font-size: 20px;
+}
 
 /*=============================================================
                CONTATO
@@ -361,7 +404,7 @@ main{
 .contato--area{
     display: flex;
     margin: 10px;
-    padding-top: 30px;
+    padding-top: 100px;
     
 }
 
@@ -370,9 +413,6 @@ main{
     padding: 20px;
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
-    
-    
-    
 }
 
 .tel--area{
@@ -381,8 +421,6 @@ main{
     padding: 20px;
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
-    
-    
 }
 
 .tel--area a ,
@@ -403,9 +441,13 @@ main{
     height: 20px;
 }
 
+
+
 /*=============================================================
               FOOTER
 =============================================================*/
+
+
 
 footer{
     height:100px;
@@ -414,9 +456,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-
 }
 
 footer div{
@@ -433,7 +472,7 @@ footer img{
               RESPONSIVIADE
 =============================================================*/
 
-@media  (max-width: 425px) {
+@media  (max-width: 625px) {
    
     header{
         margin: 20px;
@@ -446,60 +485,66 @@ footer img{
     }
     .section--1{
         padding-left: 30px;
+        min-height: 50vh;
+        padding-bottom: 200px;
     }
     .menu {
         flex:1;
         display:flex;
-        justify-content: center;
         align-items: center;
-        padding-left: 0px;
-        margin: 0;
-        padding-right: 0;
-        
+        margin: 20px;
+        padding-right: 20px;
     }
+
     .menu li{
         margin: 0;
         padding: 0;
         font-size: 10px;
     }
+
     .logoimg img{
         width: 50px;
         height: 50px;
         padding-left: 10px;
     }
+
     .tel--area a,
     .email--area a {
-     
         font-size: 10px;
     }
     
     .name h1{
         font-size: 30px;
     }
+
     .introduction{
         width: 300px;
     }
+
     .about--text h4{
         font-size: 12px;
     }
+
     .build h1{
-        font-size: 30px;
-        
+        font-size: 30px;  
     }
+
     .about--text{
         width: 300px;
         padding-top: 150px;
         color: #8892B0;
     }
+
     .link{
         flex-direction: column;
         padding: 10px;
-        align-items:flex-end;
-        
+        align-items:center;
         margin: 10px;
     }
+
     .space{
         padding-top: 30px;
+        padding-right: 30px ;
     }
 
     .about--style{
@@ -508,6 +553,7 @@ footer img{
         align-items: center;
         justify-content: center;
     }
+
     .bar{
         display: block;
         top:0;
@@ -516,12 +562,14 @@ footer img{
         margin-left: 0;
         background-color:#CCD6F6;
     }
+
     .about--text{
     width: 300px;
     padding-right: 0px;
     padding-top: 150px;
     color: #8892B0;
-}
+    }
+
     .skills--text{
         display: flex;
         align-items: center;
@@ -530,23 +578,21 @@ footer img{
         width: 300px;
         padding-right: 0;
         padding-top: 50px;
+        flex-direction: column;
     }
 
     .skills--text ul {
         font-size: 10px;
     }
     
-    
     .projetos--area{
         flex-direction: column;
-
     }
 
     .contato{
         display: flex;
         justify-content: center;
         margin: 30px;
-        
     }
     
     .contato--area{
@@ -555,7 +601,6 @@ footer img{
         padding-top: 20px;
         flex-direction: column;
         align-items: center;
-        
     }
 
     .email--area{
@@ -564,16 +609,13 @@ footer img{
     .menu li a {
         padding-left:20px;
         padding-right:20px;
-        
     }
-
 
     .projetos--img1 img ,
     .projetos--img2 img{
-    height: 130px;
-    
-    
-}
+    height: 110px;
+    }
+
     .menu li a {
         color:#48b9a6;
         text-decoration: none;
@@ -582,6 +624,11 @@ footer img{
         display:flex;
         align-items:center;
     }
+
+    .cards{
+        flex-direction: column;
+       
+    }
 }
 
 
@@ -604,29 +651,34 @@ footer img{
 
 
 
-@media  (max-width: 768px) and (min-width: 426px) {
+@media  (max-width: 1000px) and (min-width: 626px) {
 
     
+    
     header{
-        margin: 20px;
+        margin: 200px;
     }
+
     header {
         position: relative;
         width: 100%;
-        margin: 0;
+        margin: 0; 
     }
+    
     .section--1{
         padding-left: 50px;
+        min-height: 50vh;
+        padding-bottom: 200px;
     }
+
     .menu {
         flex:1;
         display:flex;
-        justify-content: center;
         align-items: center;
-        padding-left: -10px;
-        margin: 10px;
-        
+        margin: 20px;
+        padding-right: 20px;
     }
+
     .menu li{
         margin: 0;
         padding: 0;
@@ -636,27 +688,31 @@ footer img{
     .name h1{
         font-size: 40px;
     }
+
     .introduction{
         width: 300px;
     }
+
     .about--text h4{
         font-size: 12px;
     }
+
     .build h1{
-        font-size: 40px;
-        
+        font-size: 40px;    
     }
+
     .about--text{
         width: 300px;
         padding-top: 150px;
         color: #8892B0;
     }
+
     .link{
-        
         padding: 10px;
         align-items:flex-end;
         margin: 10px;
     }
+
     .space{
         padding-top: 30px;
     }
@@ -667,6 +723,7 @@ footer img{
         align-items: center;
         justify-content: center;
     }
+
     .bar{
         display: block;
         top:0;
@@ -675,6 +732,7 @@ footer img{
         margin-left: 0;
         background-color:#CCD6F6;
     }
+
     .about--text{
     width: 300px;
     padding-right: 0px;
@@ -689,12 +747,11 @@ footer img{
         width: 500px;
         padding-right: 0;
         padding-top: 50px;
-    
+        flex-direction: column;
     }
    
     .projetos--area{
         flex-direction: column;
-
     }
 
     .contato{
@@ -703,7 +760,6 @@ footer img{
         justify-content: center;
         margin: 30px;
         align-items: center;
-        
     }
     
     .contato--area{
@@ -712,30 +768,26 @@ footer img{
         padding-top: 30px;
         flex-direction: column;
         align-items: center;
-        
     }
 
     .email--area{
         padding-bottom: 30px;
     }
+
     .menu li a {
         padding-left:20px;
         padding-right:20px;
-        
     }
 
-   
     .projetos--img1 img ,
     .projetos--img2 img{
     height: 200px;
-    
-    
-}
+    }
+
     .menu li a {
         padding-left:5px;
         padding-right:5px;
         display:flex;
         align-items:center;
     }
-    
 }
