@@ -217,7 +217,7 @@ main{
 
 
 .row{
-    padding-bottom: 110px;
+    padding-bottom: 210px;
 }
 
 
@@ -566,7 +566,7 @@ footer img{
     .about--text{
     width: 300px;
     padding-right: 0px;
-    padding-top: 150px;
+    padding-top: 50px;
     color: #8892B0;
     }
 
@@ -734,7 +734,7 @@ footer img{
     .about--text{
     width: 300px;
     padding-right: 0px;
-    padding-top: 150px;
+    padding-top: 50px;
     color: #8892B0;
 }
     .skills--text{
