@@ -297,8 +297,8 @@ main{
 .cards{
    display: flex;
    
-
 }
+
 .box{
     width: 200px;
     height: 100px;
@@ -309,15 +309,14 @@ main{
     flex-direction: column;
     display: flex;
     align-items: center;
-    font-weight: bold;
-    
-    
-    
+    font-weight: bold;     
 }
 .box img {
     width: 50px;
     height: auto;
     padding-top: 10px;
+    
+    
     
 }
 .skills ,
@@ -478,7 +477,6 @@ footer img{
         margin: 20px;
     }
     header {
-        position: relative;
         width: 100%;
         box-sizing: border-box;
         margin: 0;
@@ -653,14 +651,11 @@ footer img{
 
 @media  (max-width: 1000px) and (min-width: 626px) {
 
-    
-    
     header{
         margin: 200px;
     }
 
     header {
-        position: relative;
         width: 100%;
         margin: 0; 
     }
