@@ -483,8 +483,8 @@ footer img{
     }
     .section--1{
         padding-left: 30px;
-        min-height: 50vh;
-        padding-bottom: 200px;
+        min-height: 100vh;
+       
     }
     .menu {
         flex:1;
@@ -664,6 +664,7 @@ footer img{
         padding-left: 50px;
         min-height: 50vh;
         padding-bottom: 200px;
+        min-height: 100vh;
     }
 
     .menu {
